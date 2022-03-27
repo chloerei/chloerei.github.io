@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<header class="mdc-toolbar" data-mdc-auto-init="MDCToolbar">
+  <div class="mdc-toolbar__row">
+    <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+      <a href="/posts/" class="material-icons">arrow_back</a>
+    </section>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <article class="content">
+      <header>
+        <h1>{{ page.title }}</h1>
+        <p class="meta">
+          <a href="/">Rei</a> 写于 {{ page.date | date_to_string }}
+        </p>
+      </header>
+      {{ content }}
+    </article>
+    <section class="content">
+      {% include disqus.html %}
+    </section>
+  </div>
+</main>

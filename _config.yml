@@ -1,0 +1,12 @@
+name: Rei
+description: "Rei 的个人网站"
+url: https://chloerei.com
+permalink: pretty
+
+disqus: 'chloerei'
+gravatar_url: http://gravatar.com/avatar/5aec84cd0b5479a0d1d89b6ffa2a9a20.png?s=120
+
+sass:
+  sass_dir: stylesheets/_sass
+
+exclude: [Gemfile, Gemfile.lock, Dockerfile, docker-compose.yml]

@@ -1,0 +1,28 @@
+---
+layout: default
+title: 日志
+---
+
+<header class="mdc-toolbar">
+  <div class="mdc-toolbar__row">
+    <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+      <a href="/" class="material-icons">arrow_back</a>
+      <span class="mdc-toolbar__title">日志</span>
+    </section>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="mdc-list mdc-list--two-line">
+      {% for post in site.posts %}
+        <a href="{{ post.url }}" class="mdc-list-item" data-mdc-auto-init="MDCRipple">
+          <div class="mdc-list-item__text">
+            {{ post.title }}
+            <span class="mdc-list-item__text__secondary">{{ post.date | date_to_string }}</span>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</main>

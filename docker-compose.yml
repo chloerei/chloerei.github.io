@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    command: bundle exec jekyll server -H 0.0.0.0
+    volumes:
+      - .:/app
+    ports:
+      - 4000:4000
